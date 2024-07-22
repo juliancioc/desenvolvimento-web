@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desenvolvimento web</title>
+
+    <link href="styles.css" rel="stylesheet" />
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Login</a></li>
+                <li><a href="#">Cadastro</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div id="hero">
+                <div>
+                    <h1>Desenvolvimento<br><span> Web</span></h1>
+                    <p>Desenvolvimento web é o processo de criação e manutenção de sites<br> e aplicativos para a
+                        internet.
+                        Envolve
+                        várias disciplinas e habilidades.</p>
+                </div>
+
+                <figure class="hide-img-mobile">
+                    <img src="./assets/web.png" alt="desenvolvimento web">
+                </figure>
+            </div>
+
+
+            <h2>Principais habilidades do desenvolvimento web</h2>
+            <div class="skills">
+                <div class="card">
+                    <figure>
+                        <img src="./assets/frontend.png" alt="mesa com um computador" width="120">
+                    </figure>
+                    <span>Front-end</span>
+                    <p>
+                        Parte visual e interativa do site que os usuários veem e interagem.
+                        Tecnologias comuns
+                        incluem <em>HTML, CSS e JavaScript</em>.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <figure>
+                        <img src="./assets/backend.png" alt="duas pessoas programando" width="120">
+                    </figure>
+                    <span>Back-end</span>
+                    <p>Parte do site que lida com a lógica, banco de dados e autenticação.
+                        Envolve servidores,
+                        bancos de dados e linguagens como Python, Ruby, PHP e Node.js.</p>
+                </div>
+
+                <div class="card">
+                    <figure>
+                        <img src="./assets/fullstack.png" alt="uma pessoa programando" width="120">
+                    </figure>
+                    <span>Full-stack</span>
+                    <p>Combinação de desenvolvimento front-end e back-end, onde o
+                        desenvolvedor lida com ambas
+                        as áreas.</p>
+                </div>
+
+                <div class="card">
+                    <figure>
+                        <img src="./assets/responsivo.png" alt="um celular e uma garota" width="120">
+                    </figure>
+                    <span>Design Responsivo</span>
+                    <p>
+                        Criação de sites que funcionam bem em diversos dispositivos
+                        e
+                        tamanhos de tela.
+                    </p>
+                </div>
+            </div>
+
+            <aside>
+                <h2>Veja um vídeo explicativo</h2>
+                <video controls>
+                    <source src="./assets/web.mp4" type="video/mp4" />
+                </video>
+            </aside>
+        </section>
+
+        <section>
+            <h2>Tabela de cargos</h2>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Cargo</th>
+                            <th>Atividades</th>
+                            <th>Tecnologias</th>
+                            <th>Quantidade de vagas</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Desenvolvedor Front-end</td>
+                            <td>Criar interfaces de usuário com HTML, CSS e JavaScript, garantir responsividade,
+                                otimizar
+                                performance, assegurar acessibilidade, testar e corrigir bugs, integrar funcionalidades
+                                com
+                                back-end, usar frameworks como React ou Angular e manter o código atualizado.</td>
+                            <td>HTML5, CSS3, JavaScript, React, Next, Vue, Angular, Webpack, Babel, Sass, Less, Git,
+                                Jest,
+                                Mocha, Cypress, Api REST, GraphQL</td>
+                            <td>30.000</td>
+                        </tr>
+                        <tr>
+                            <td>Desenvolvedor Back-end</td>
+                            <td>Cria e mantém servidores, bancos de dados e APIs, implementa a lógica de negócios,
+                                garante
+                                segurança de dados, otimiza o desempenho e colabora com o front-end para integração de
+                                serviços</td>
+                            <td>Python, Java, Ruby, PHP, JavaScript (Node.js), C#, MySQL, PostgreSQL, MongoDB, Redis
+                            </td>
+                            <td>20.000</td>
+                        </tr>
+                        <tr>
+                            <td>UI/UX</td>
+                            <td>Pesquisa necessidades dos usuários, cria wireframes e protótipos, desenvolve o design
+                                visual, realiza testes de usabilidade e define fluxos de navegação, colaborando com a
+                                equipe
+                                para garantir uma experiência coesa e agradável.</td>
+                            <td>Sketch, Figma, Adobe XD, InVision, Axure, Adobe Photoshop, Illustrator, UserTesting,
+                                Hotjar
+                            </td>
+                            <td>25.000</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section>
+            <h2>Formulário de cadastro</h2>
+            <div class="register">
+                <figure class="hide-img-mobile">
+                    <img src="./assets/fill-form.png" alt="cadastro" />
+                </figure>
+
+                <form method="POST">
+                    <div class="wrapper-form">
+                        <input id="firstname" name="firstname" type="text" required placeholder="Primeiro nome" />
+
+                        <input name="lastname" id="lastname" type="text" placeholder="Último nome" />
+                    </div>
+                    <input name="mail" id="mail" type="mail" placeholder="E-mail" />
+
+                    <div class="wrapper-form">
+                        <input name="password" id="password" type="password" maxlength="16" minlength="4"
+                            placeholder="Senha" />
+
+                        <input name="age" id="age" type="number" placeholder="Idade" />
+                    </div>
+
+                    <div class="wrapper-form">
+                        <input name="cpf" id="cpf" type="text" placeholder="CPF" />
+
+                        <input name="phone" id="phone" type="text" placeholder="Celular" />
+                    </div>
+
+                    <input name="occupation" id="occupation" list="occupations" placeholder="Profissão" />
+                    <datalist id="occupations">
+                        <option value="Desenvolvedor Front-end" />
+                        <option value="Desenvolvedor Back-end" />
+                        <option value="Desenvolvedor Full-stack" />
+                        <option value="QA" />
+                        <option value="UI/UX" />
+                    </datalist>
+
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <br>
+    <footer>
+        <p>Desenvolvimento Web - 2024</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
