@@ -1,13 +1,9 @@
 <!DOCTYPE html>
-
 <html lang="pt">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Desenvolvimento web</title>
-
-    <link href="styles.css" rel="stylesheet" />
+    <title>Desenvolvimento Web</title>
 </head>
 
 <body>
@@ -22,70 +18,37 @@
     </header>
     <main>
         <section>
-            <div id="hero">
-                <div>
-                    <h1>Desenvolvimento<br><span> Web</span></h1>
-                    <p>Desenvolvimento web é o processo de criação e manutenção de sites<br> e aplicativos para a
-                        internet.
-                        Envolve
-                        várias disciplinas e habilidades.</p>
-                </div>
+            <h1>Desenvolvimento Web</h1>
 
-                <figure class="hide-img-mobile">
-                    <img src="./assets/web.png" alt="desenvolvimento web">
-                </figure>
-            </div>
+            <figure>
+                <img src="./assets/web.png" width="520" alt="notebook com uma garota" />
 
+                <figcaption>Desenvolvimento web</figcaption>
+            </figure>
 
-            <h2>Principais habilidades do desenvolvimento web</h2>
-            <div class="skills">
-                <div class="card">
-                    <figure>
-                        <img src="./assets/frontend.png" alt="mesa com um computador" width="120">
-                    </figure>
-                    <span>Front-end</span>
-                    <p>
-                        Parte visual e interativa do site que os usuários veem e interagem.
-                        Tecnologias comuns
-                        incluem <em>HTML, CSS e JavaScript</em>.
-                    </p>
-                </div>
+            <p>Desenvolvimento web é o processo de criação e manutenção de sites e aplicativos para a internet. Envolve
+                várias disciplinas e habilidades, incluindo:</p>
 
-                <div class="card">
-                    <figure>
-                        <img src="./assets/backend.png" alt="duas pessoas programando" width="120">
-                    </figure>
-                    <span>Back-end</span>
-                    <p>Parte do site que lida com a lógica, banco de dados e autenticação.
-                        Envolve servidores,
-                        bancos de dados e linguagens como Python, Ruby, PHP e Node.js.</p>
-                </div>
+            <ol>
+                <li><strong>Front-end:</strong> Parte visual e interativa do site que os usuários veem e interagem.
+                    Tecnologias comuns
+                    incluem <em>HTML, CSS e JavaScript</em>.</li>
 
-                <div class="card">
-                    <figure>
-                        <img src="./assets/fullstack.png" alt="uma pessoa programando" width="120">
-                    </figure>
-                    <span>Full-stack</span>
-                    <p>Combinação de desenvolvimento front-end e back-end, onde o
-                        desenvolvedor lida com ambas
-                        as áreas.</p>
-                </div>
+                <li><strong>Back-end:</strong> Parte do site que lida com a lógica, banco de dados e autenticação.
+                    Envolve servidores,
+                    bancos de dados e linguagens como Python, Ruby, PHP e Node.js.</li>
 
-                <div class="card">
-                    <figure>
-                        <img src="./assets/responsivo.png" alt="um celular e uma garota" width="120">
-                    </figure>
-                    <span>Design Responsivo</span>
-                    <p>
-                        Criação de sites que funcionam bem em diversos dispositivos
-                        e
-                        tamanhos de tela.
-                    </p>
-                </div>
-            </div>
+                <li><strong>Full-stack:</strong> Combinação de desenvolvimento front-end e back-end, onde o
+                    desenvolvedor lida com ambas
+                    as áreas.</li>
+
+                <li>
+                    <strong>Design Responsivo:</strong> Criação de sites que funcionam bem em diversos dispositivos e
+                    tamanhos de tela.
+                </li>
+            </ol>
 
             <aside>
-                <h2>Veja um vídeo explicativo</h2>
                 <video controls>
                     <source src="./assets/web.mp4" type="video/mp4" />
                 </video>
@@ -93,106 +56,111 @@
         </section>
 
         <section>
-            <h2>Tabela de cargos</h2>
-            <div class="table-container">
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Cargo</th>
-                            <th>Atividades</th>
-                            <th>Tecnologias</th>
-                            <th>Quantidade de vagas</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Desenvolvedor Front-end</td>
-                            <td>Criar interfaces de usuário com HTML, CSS e JavaScript, garantir responsividade,
-                                otimizar
-                                performance, assegurar acessibilidade, testar e corrigir bugs, integrar funcionalidades
-                                com
-                                back-end, usar frameworks como React ou Angular e manter o código atualizado.</td>
-                            <td>HTML5, CSS3, JavaScript, React, Next, Vue, Angular, Webpack, Babel, Sass, Less, Git,
-                                Jest,
-                                Mocha, Cypress, Api REST, GraphQL</td>
-                            <td>30.000</td>
-                        </tr>
-                        <tr>
-                            <td>Desenvolvedor Back-end</td>
-                            <td>Cria e mantém servidores, bancos de dados e APIs, implementa a lógica de negócios,
-                                garante
-                                segurança de dados, otimiza o desempenho e colabora com o front-end para integração de
-                                serviços</td>
-                            <td>Python, Java, Ruby, PHP, JavaScript (Node.js), C#, MySQL, PostgreSQL, MongoDB, Redis
-                            </td>
-                            <td>20.000</td>
-                        </tr>
-                        <tr>
-                            <td>UI/UX</td>
-                            <td>Pesquisa necessidades dos usuários, cria wireframes e protótipos, desenvolve o design
-                                visual, realiza testes de usabilidade e define fluxos de navegação, colaborando com a
-                                equipe
-                                para garantir uma experiência coesa e agradável.</td>
-                            <td>Sketch, Figma, Adobe XD, InVision, Axure, Adobe Photoshop, Illustrator, UserTesting,
-                                Hotjar
-                            </td>
-                            <td>25.000</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
+            <h3>Tabela de cargos</h3>
+
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Cargo</th>
+                        <th>Atividades</th>
+                        <th>Tecnologias</th>
+                        <th>Quantidade de vagas</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Desenvolvedor Front-end</td>
+                        <td>Criar interfaces de usuário com HTML, CSS e JavaScript, garantir responsividade, otimizar
+                            performance, assegurar acessibilidade, testar e corrigir bugs, integrar funcionalidades com
+                            back-end, usar frameworks como React ou Angular e manter o código atualizado.</td>
+                        <td>HTML5, CSS3, JavaScript, React, Next, Vue, Angular, Webpack, Babel, Sass, Less, Git, Jest,
+                            Mocha, Cypress, Api REST, GraphQL</td>
+                        <td>30.000</td>
+                    </tr>
+                    <tr>
+                        <td>Desenvolvedor Back-end</td>
+                        <td>Cria e mantém servidores, bancos de dados e APIs, implementa a lógica de negócios, garante
+                            segurança de dados, otimiza o desempenho e colabora com o front-end para integração de
+                            serviços</td>
+                        <td>Python, Java, Ruby, PHP, JavaScript (Node.js), C#, MySQL, PostgreSQL, MongoDB, Redis</td>
+                        <td>20.000</td>
+                    </tr>
+                    <tr>
+                        <td>UI/UX</td>
+                        <td>Pesquisa necessidades dos usuários, cria wireframes e protótipos, desenvolve o design
+                            visual, realiza testes de usabilidade e define fluxos de navegação, colaborando com a equipe
+                            para garantir uma experiência coesa e agradável.</td>
+                        <td>Sketch, Figma, Adobe XD, InVision, Axure, Adobe Photoshop, Illustrator, UserTesting, Hotjar
+                        </td>
+                        <td>25.000</td>
+                    </tr>
+                </tbody>
+            </table>
         </section>
 
-        <section>
-            <h2>Formulário de cadastro</h2>
-            <div class="register">
-                <figure class="hide-img-mobile">
-                    <img src="./assets/fill-form.png" alt="cadastro" />
-                </figure>
+        <h3>Formulário de cadastro</h3>
+        <figure>
+            <img src="./assets/fill-form.png" width="520" alt="formulario">
+            <figcaption><small>Passo a passo para cadastro</small></figcaption>
+        </figure>
 
-                <form method="POST">
-                    <div class="wrapper-form">
-                        <input id="firstname" name="firstname" type="text" required placeholder="Primeiro nome" />
+        <form method="POST">
+            <label for="firstname">Primeiro nome:</label>
+            <input type="text" id="firstname" required name="firstname">
+            <br><br>
 
-                        <input name="lastname" id="lastname" type="text" placeholder="Último nome" />
-                    </div>
-                    <input name="mail" id="mail" type="mail" placeholder="E-mail" />
+            <label for="lastname">Último nome:</label>
+            <input type="text" id="lastname" name="lastname" required>
+            <br><br>
 
-                    <div class="wrapper-form">
-                        <input name="password" id="password" type="password" maxlength="16" minlength="4"
-                            placeholder="Senha" />
+            <label for="password">Senha:</label>
+            <input type="password" id="password" name="password" maxlength="16" minlength="4" />
+            <br><br>
 
-                        <input name="age" id="age" type="number" placeholder="Idade" />
-                    </div>
+            <label fro="birthdate">Data de nascimento:</label>
+            <input type="date" id="birthdate" name="birthdate" />
+            <br><br>
 
-                    <div class="wrapper-form">
-                        <input name="cpf" id="cpf" type="text" placeholder="CPF" />
+            <label for="occupation">Profissão:</label>
+            <input name="occupation" id="occupation" list="occupations" />
 
-                        <input name="phone" id="phone" type="text" placeholder="Celular" />
-                    </div>
+            <datalist id="occupations">
+                <option value="Desenvolvedor Front-end" />
+                <option value="Desenvolvedor Back-end" />
+                <option value="Desenvolvedor Full-stack" />
+                <option value="QA" />
+                <option value="UI/UX" />
+            </datalist>
+            <br><br>
 
-                    <input name="occupation" id="occupation" list="occupations" placeholder="Profissão" />
-                    <datalist id="occupations">
-                        <option value="Desenvolvedor Front-end" />
-                        <option value="Desenvolvedor Back-end" />
-                        <option value="Desenvolvedor Full-stack" />
-                        <option value="QA" />
-                        <option value="UI/UX" />
-                    </datalist>
+            <label for="cpf">CPF:</label>
+            <input name="cpf" id="cpf" type="text" />
+            <br><br>
 
-                    <button type="submit">Enviar</button>
-                </form>
-            </div>
-        </section>
+            <label for="phone">Telefone:</label>
+            <input name="phone" id="phone" type="text" />
+            <br><br>
 
+            <label for="mail">E-mail:</label>
+            <input name="mail" id="mail" type="mail" />
+            <br><br>
+
+            <label for="age">Idade:</label>
+            <input name="age" id="age" type="number" />
+            <br><br>
+
+            <label for="note">Observação:</label>
+            <textarea id="note" name="note" rows="5" cols="25">Deixe uma observação...</textarea>
+            <br><br>
+
+            <input type="submit" value="Enviar" />
+        </form>
     </main>
 
     <br>
     <footer>
-        <p>Desenvolvimento Web - 2024</p>
+        <small>Desenvolvimento Web - 2024</small>
     </footer>
-
-    <script src="main.js"></script>
 </body>
 
 </html>
